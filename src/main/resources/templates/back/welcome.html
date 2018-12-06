@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:shiro="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面</title>
+</head>
+<br>
+<h1>权限菜单树</h1>
+<h1 style="color: aqua"><td th:text="${msg}"></h1>
+<div shiro:hasPermission="1">
+<a href="/user/teacher">老师</a></br>
+</div>
+<div shiro:hasPermission="2">
+<a href="/user/student">学生</a>
+</div>
+</body>
+</html>
